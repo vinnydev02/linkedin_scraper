@@ -1,0 +1,42 @@
+{
+  "linkedin_base_url": "https://www.linkedin.com",
+  "keywords": [
+    "hiring AI Engineer",
+    "Agentic AI Developer Hiring"
+  ],
+  "max_posts_per_keyword": 2,
+  "date_posted": "past-24h",
+  "sortby": "relevance",
+  "blocked_paths": [
+    "/login",
+    "/authwall",
+    "/checkpoint",
+    "/uas/login"
+  ],
+  "login_timeout_ms": 300000,
+  "max_stale_scrolls": 6,
+  "browser_close_delay_seconds": 30,
+  "paths": {
+    "profile_dir": "./linkedin_profile",
+    "output_csv": "./linkedin_posts.csv"
+  },
+  "browser": {
+    "channel": "chrome",
+    "headless": false,
+    "viewport_width": 1440,
+    "viewport_height": 900,
+    "locale": "en-IN",
+    "timezone_id": "Asia/Kolkata",
+    "default_timeout_ms": 15000
+  },
+  "delays": {
+    "short_pause_seconds": [0.8, 1.8],
+    "load_pause_seconds": [3.0, 5.0],
+    "wheel_tick_pause_ms": [150.0, 350.0],
+    "scroll_pause_seconds": [4.0, 7.0],
+    "keyword_gap_seconds": [15.0, 30.0],
+    "wheel_ticks": [4, 7],
+    "wheel_delta_px": [250, 450],
+    "scroll_step_px": 900
+  }
+}
